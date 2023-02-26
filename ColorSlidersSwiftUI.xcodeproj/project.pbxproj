@@ -13,6 +13,7 @@
 		D1542AAE29A7D51A0021DB3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1542AAD29A7D51A0021DB3C /* ContentView.swift */; };
 		D1542AB029A7D51B0021DB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1542AAF29A7D51B0021DB3C /* Assets.xcassets */; };
 		D1542AB329A7D51B0021DB3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1542AB229A7D51B0021DB3C /* Preview Assets.xcassets */; };
+		D18E081429ABC541009E1CC0 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E081329ABC541009E1CC0 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D1542AAD29A7D51A0021DB3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1542AAF29A7D51B0021DB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1542AB229A7D51B0021DB3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D18E081329ABC541009E1CC0 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D1542AAD29A7D51A0021DB3C /* ContentView.swift */,
 				D14CF22D29A95F0700C9F886 /* ColorView.swift */,
 				D14CF22B29A9449000C9F886 /* SliderView.swift */,
+				D18E081329ABC541009E1CC0 /* TextFieldView.swift */,
 				D1542AAF29A7D51B0021DB3C /* Assets.xcassets */,
 				D1542AB129A7D51B0021DB3C /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14CF22E29A95F0700C9F886 /* ColorView.swift in Sources */,
+				D18E081429ABC541009E1CC0 /* TextFieldView.swift in Sources */,
 				D14CF22C29A9449000C9F886 /* SliderView.swift in Sources */,
 				D1542AAE29A7D51A0021DB3C /* ContentView.swift in Sources */,
 				D1542AAC29A7D51A0021DB3C /* ColorSlidersSwiftUIApp.swift in Sources */,

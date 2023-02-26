@@ -16,10 +16,6 @@ struct ColorView: View {
         Color(red: red / 255, green: green / 255, blue: blue / 255)
             .frame(height: UIScreen.main.bounds.width / 2)
             .cornerRadius(20)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color(.white), lineWidth: 3)
-            )
     }
 }
 
