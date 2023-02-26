@@ -28,10 +28,10 @@ struct TextFieldView: View {
             case 0...225: value = Double(textToInt)
             default: showAlert = true
             }
+        } else {
+            showAlert = true
         }
-        showAlert = true
     }
-    
 }
 
 struct TextFieldView_Previews: PreviewProvider {
