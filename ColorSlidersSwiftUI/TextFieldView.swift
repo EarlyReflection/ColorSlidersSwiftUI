@@ -25,7 +25,7 @@ struct TextFieldView: View {
     private func chekValue() {
         if let textToInt = Int(text) {
             switch textToInt {
-            case 0...225: value = Double(textToInt)
+            case 0...255: value = Double(textToInt)
             default: showAlert = true
             }
         } else {
