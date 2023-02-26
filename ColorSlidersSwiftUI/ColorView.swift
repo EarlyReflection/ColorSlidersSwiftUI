@@ -20,12 +20,11 @@ struct ColorView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color(.white), lineWidth: 3)
             )
-
     }
 }
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorView(red: 0, green: 0, blue: 0)
+        ColorView(red: 255, green: 100, blue: 100)
     }
 }
