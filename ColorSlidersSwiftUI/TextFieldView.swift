@@ -17,9 +17,9 @@ struct TextFieldView: View {
         TextField("", text: $text) { chekValue()}
             .textFieldStyle(.roundedBorder)
             .foregroundColor(color)
-        .frame(width: 50)
-        .alert("Wrong format", isPresented: $showAlert,actions: {},
-               message: {Text("Type number from 0 to 255")})
+            .frame(width: 50)
+            .alert("Wrong format", isPresented: $showAlert,actions: {},
+                   message: {Text("Type number from 0 to 255")})
     }
     
     private func chekValue() {
@@ -29,6 +29,7 @@ struct TextFieldView: View {
             default: showAlert = true
             }
         }
+        showAlert = true
     }
     
 }
