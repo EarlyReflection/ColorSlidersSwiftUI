@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SliderView: View {
     @Binding var sliderValue: Double
-    @State var text: String = ""
+    @State private var text: String = ""
     let color: Color
     
     var body: some View {
@@ -17,12 +17,17 @@ struct SliderView: View {
             Text("\(lround(sliderValue))")
                 .frame(width: 35, alignment: .leading)
                 .foregroundColor(color)
-            Slider(value: $sliderValue, in: 0...255, step: 1) {_ in
-                text = String(lround(sliderValue))
-            }
+            Slider(value: $sliderValue, in: 0...255, step: 1) 
                 .tint(color)
+                .onChange(of: sliderValue) { newValue in
+                    text = String(lround(sliderValue))
+                }
             TextFieldView(text: $text, value: $sliderValue, color: color)
         }
+        .onAppear {
+            text = String(lround(sliderValue))
+        }
+
     }
     
     

@@ -14,7 +14,7 @@ struct TextFieldView: View {
     let color: Color
     
     var body: some View {
-        TextField("", text: $text) { chekValue()}
+        TextField("", text: $text) { _ in checkValue() }
             .textFieldStyle(.roundedBorder)
             .foregroundColor(color)
             .frame(width: 50)
@@ -22,17 +22,17 @@ struct TextFieldView: View {
                    message: {Text("Type number from 0 to 255")})
     }
     
-    private func chekValue() {
-        if let textToInt = Int(text) {
-            switch textToInt {
-            case 0...255: value = Double(textToInt)
-            default: showAlert = true
-            }
+    private func checkValue() {
+        if let textToInt = Int(text), (0...255).contains(textToInt) {
+            value = Double(textToInt)
         } else {
             showAlert = true
+            text = "0"
+            value = 0
         }
     }
 }
+
 
 struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
